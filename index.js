@@ -1,9 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const originalWord = word.toLowerCase();
+  /*split, reverse, join to make new word*/
+  const newWord = originalWord.split("").reverse().join("");
+//now set Boolean to return; should return false/true
+ return newWord === originalWord;
 }
 
 /* 
-  Add your pseudocode here
+convert word to all lowercase
+turn string into a an array with substrings (aka, turn each letter 
+  in the word into it's own string)
+reverse the array 
+join the array
+set the new string to equal the old one to check if it's true/false (Boolean!)
+
 */
 
 /*
